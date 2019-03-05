@@ -1,0 +1,24 @@
+<block>
+    <view>
+        <scroll-view class="comment left-right-modual" scroll-x="{{true}}" scroll-with-animation="{{true}}" scroll-left="0" style="width:100%; white-space:nowrap;" lower-threshold="20rpx" upper-threshold="20rpx">
+            <view class="scroll-container" wx:key="{{idx}}" wx:for="{{data.city}}" wx:for-item="item" wx:for-index="idx">
+                <button class="blue-button">{{item}}</button>
+            </view>
+        </scroll-view>
+        <scroll-view class="modual" scroll-x="{{true}}" scroll-with-animation="{{true}}" scroll-left="0" style="width:100%; white-space: nowrap" lower-threshold="20rpx" upper-threshold="20rpx">
+            <view class="scroll-container" wx:key="{{idx}}" wx:for="{{data.listings}}" wx:for-item="item" wx:for-index="idx">
+                <image src="{{item.images[0]}}" style="height:400rpx; width:580rpx;" />
+                <view class="font black">
+                    <view class="subtitle bold">{{item.type + ' / ' + item.bedroom + '卧' + item.bed + '床' + item.bathroom + '卫'}}</view>
+                    <view class="title">{{item.title}}</view>
+                    <view class="title">{{'每晚 $' + item.price + '起 • 免费取消预定'}}</view>
+                    <view class="space-inparagrah"></view>
+                    <rate rate="{{item.rate}}" __triggerObserer="{{ _triggerObserer }}"></rate>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="left-right-modual">
+            <button class="pink-button font">查找城市相关{{type}}</button>
+        </view>
+    </view>
+</block>

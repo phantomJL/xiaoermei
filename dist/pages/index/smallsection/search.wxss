@@ -1,0 +1,119 @@
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
+
+.center-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .center-container Image {
+    width: 100%;
+    height: 100%; }
+
+.block {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.space-around {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.space-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.pink-button {
+  color: white;
+  font-size: 34rpx;
+  background-color: #f06292;
+  font-weight: bold;
+  text-align: center; }
+
+.blue-button {
+  color: #22849f;
+  font-size: 30rpx;
+  border: 2rpx solid #22849f;
+  background-color: white;
+  text-align: center; }
+
+.box-shadow {
+  -webkit-box-shadow: 3rpx 2rpx 10rpx #d3d2d3;
+          box-shadow: 3rpx 2rpx 10rpx #d3d2d3; }
+
+.modual {
+  padding: 50rpx 50rpx; }
+
+.left-right-modual {
+  padding: 0rpx 50rpx; }
+
+.scroll-container {
+  margin-right: 30rpx;
+  display: inline-block; }
+
+.space-inparagrah {
+  padding: 0 10rpx; }
+
+.space-comp {
+  padding: 50rpx; }
+
+
+.font {
+  font-family: PingFangSC-Regular, sans-serif; }
+
+.bold {
+  font-weight: bold; }
+
+.slogan {
+  font-size: 50rpx; }
+
+.subslogan {
+  font-size: 35rpx; }
+
+.title {
+  font-size: 30rpx; }
+
+.subtitle {
+  font-size: 25rpx; }
+
+.white {
+  color: white; }
+
+.black {
+  color: #474747; }
+
+.pink {
+  color: #f06292; }
+
+.blue {
+  color: #22849f; }
+
+.grey {
+  color: #d3d2d3; }
+
+
+.housePic {
+  height: 500rpx; }
+
+Image {
+  width: 100%; }

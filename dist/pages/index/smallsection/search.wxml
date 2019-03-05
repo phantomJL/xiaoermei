@@ -1,0 +1,21 @@
+<block>
+    <view>
+        <view class="font box-shadow" style="padding:45rpx; background-color:white;">
+            <view style="margin-bottom: 30rpx; padding-bottom: 10rpx; border-bottom: 2rpx solid rgb(211,210,211);">
+                <view>
+                    <picker mode="selector" range="{{selector}}" bindchange="onChange">
+                        <view class="title subslogan">{{selectorChecked}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="block space-between">
+                <view style="width:48%;">
+                    <button class="pink-button font" bindtap="HouseDetail" data-e-HouseDetail-so="this" data-e-HouseDetail-a-a="{{selectorChecked}}">查找民宿</button>
+                </view>
+                <view style="width:48%;">
+                    <button class="pink-button font" bindtap="ParturitionDetail" data-e-ParturitionDetail-so="this" data-e-ParturitionDetail-a-a="{{selectorChecked}}">查找月子中心</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

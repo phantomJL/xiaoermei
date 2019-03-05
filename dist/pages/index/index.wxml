@@ -1,0 +1,42 @@
+<block>
+    <view class="index">
+        <block>
+            <block wx:if="{{initDone}}">
+                <view class="relative">
+                    <banner-swiper recommand="{{data.bannerPic}}" __triggerObserer="{{ _triggerObserer }}" style="width:100%;"></banner-swiper>
+                    <view class="absolute" style="top:50rpx; left:50rpx;">
+                        <view class="center-container" style="width:100rpx; height:100rpx;">
+                            <image src="{{logo}}" />
+                        </view>
+                    </view>
+                    <view class="absolute" style="top:350rpx; left:50rpx; right:50rpx;">
+                        <search city="{{data.city}}" __triggerObserer="{{ _triggerObserer }}" changehousecity="change_house_city" changecity="change_city" data-e-change_house_city-so="this" data-e-change_city-so="this"></search>
+                    </view>
+                    <view class="modual font black" style="margin-top: 150rpx;">
+                        <view>
+                            <text class="bold slogan">精选民宿</text>
+                        </view>
+                        <view>
+                            <text class="subslogan">推荐精选名宿，让你如归家般安心</text>
+                        </view>
+                    </view>
+                    <scroll-house data="{{data}}" __triggerObserer="{{ _triggerObserer }}" type="民宿"></scroll-house>
+                    <view class="modual font black" style="margin-top: 50rpx;">
+                        <view>
+                            <text class="bold slogan">精选月子中心</text>
+                        </view>
+                        <view>
+                            <text class="subslogan">推荐精选月子中心，让宝宝健康出生</text>
+                        </view>
+                    </view>
+                    <scroll-house data="{{data}}" __triggerObserer="{{ _triggerObserer }}" type="月子中心"></scroll-house>
+                </view>
+            </block>
+            <block wx:else>
+                <view>
+                    <image src="{{loading}}" />
+                </view>
+            </block>
+        </block>
+    </view>
+</block>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "banner-swiper": "./smallsection/swiper",
+    "search": "./smallsection/search",
+    "scroll-house": "./smallsection/scrollhouse"
+  },
+  "navigationBarTitleText": "北美华人民宿"
+}

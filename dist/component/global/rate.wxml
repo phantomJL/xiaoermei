@@ -1,0 +1,12 @@
+<block>
+    <view>
+        <view style="text-align: center;">
+            <view class="center-container" style="width:25rpx;height:25rpx; float:left;" wx:key="{{idx}}" wx:for="{{list}}" wx:for-item="item" wx:for-index="idx">
+                <image src="{{item.type}}" />
+            </view>
+            <view class="center-container space-inparagrah" style="width:25rpx;height:25rpx;" wx:key="{{idx}}">
+                <text class="subtitle">{{rate}}</text>
+            </view>
+        </view>
+    </view>
+</block>

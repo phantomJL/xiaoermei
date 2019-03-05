@@ -1,0 +1,12 @@
+<block>
+    <view>
+        <swiper class="housePic relative" indicator-color="#FFFFFF" indicator-active-color="rgba(3, 108, 111, 1)" horizontal="{{true}}" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}">
+            <swiper-item class="slide-image" wx:key="{{idx}}" wx:for="{{recommand}}" wx:for-item="item" wx:for-index="idx">
+                <image src="{{item.image}}" />
+                <view class="absolute font bold slogan white" style="top:250rpx; left:50rpx;">
+                    <text>{{item.slogan}}</text>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+</block>
